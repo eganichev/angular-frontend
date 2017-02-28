@@ -1,0 +1,21 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
+$ionicons-font-path: "~ionicons/fonts";
+$icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
+$fa-font-path: "~font-awesome/fonts";
+
+$primaryColor:   #282828;
+$accentColor:    #00abff;
+$bgColor:        #4892cf;
+$darkBgColor:    #4664a4;
+$lightBgColor:   #3e84c2;
+$lightTextColor: #f5f5f5;
+$darkTextColor:  #212121;
+
+body {
+   height: 100%;
+   // browsers default to 16px for font-size,
+   // so setting top-level font-size to 62.5%
+   // scales 1rem to equal 10px.
+   font: 62.5% 'Roboto', sans-serif;
+}

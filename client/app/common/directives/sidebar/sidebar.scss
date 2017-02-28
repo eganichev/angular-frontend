@@ -1,0 +1,66 @@
+@import '../../common';
+
+.sidebar {
+  width: 180px;
+  padding-top: 50px;
+  margin-top: -50px;
+  top: 50px;
+  left: 0;
+  z-index: 0;
+  display: block;
+  min-height: 100%;
+  background-color: $primaryColor;
+  height: 100%;
+  position: absolute;
+
+  .sidebar-list {
+    margin: 0;
+    overflow: hidden;
+    padding: 18px 0 0 0;
+    list-style: none;
+  }
+
+  a.sidebar-list-link:hover {
+    color: $accentColor;
+  }
+
+  a.sidebar-list-link i {
+    margin-right: 18px;
+    width: 16px;
+    display: inline-block;
+  }
+
+  a.sidebar-list-link {
+    display: block;
+    height: 42px;
+    padding-left: 18px;
+    text-shadow: none;
+    font-size: 13px;
+    text-decoration: none;
+    color: #fff;
+    line-height: 42px;
+    white-space: nowrap;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  .sidebar-list-item.selected {
+    background-color: $accentColor;
+
+    a.sidebar-list-link:hover {
+      color: #fff;
+    }
+  }
+
+  .sidebar-list-item {
+    display: block;
+    position: relative;
+    float: none;
+    padding: 0;
+  }
+}
+
+.height100 {
+  min-height: 100%;
+  height: 100%;
+}

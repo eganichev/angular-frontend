@@ -1,0 +1,9 @@
+<aside class="sidebar">
+  <ul class="sidebar-list">
+    <li class="sidebar-list-item {{menuItem.isSelected ? 'selected' : ''}}" ng-repeat="menuItem in $ctrl.menu" ng-click="$ctrl.selectMenuItem($index)">
+      <a class="sidebar-list-link" href="#" ui-sref="{{::menuItem.name}}">
+        <i class="{{::menuItem.icon}}"></i><span>{{::menuItem.title}}</span>
+      </a>
+    </li>
+  </ul>
+</aside>
